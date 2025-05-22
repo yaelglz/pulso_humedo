@@ -1,6 +1,6 @@
 async function cargarDatos() {
     try {
-        const respuesta = await fetch("http://172.20.10.5:8000/historial/");
+        const respuesta = await fetch("/historial/");
         const datos = await respuesta.json();
 
         console.log(datos);
