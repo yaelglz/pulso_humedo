@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historial de Sensores</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body class="bg-gray-100">
+<nav class="sticky top-0 z-50 shadow-md" style="background-color: #d3e0d1;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold text-gray-900">Pulso Húmedo</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="/" class="text-gray-800 hover:text-gray-600 font-medium">Inicio</a>
+        <a href="/grafica" class="text-gray-800 hover:text-gray-600 font-medium">Gráficas</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-900 focus:outline-none focus:text-gray-700">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+    <a href="/" class="block text-gray-800 hover:text-gray-600 font-medium">Inicio</a>
+    <a href="/grafica" class="block text-gray-800 hover:text-gray-600 font-medium">Gráficas</a>
+  </div>
+</nav>
+
+  <h1 class="titulo-pagina">Pulso Húmedo</h1>
+  <div class="container">
+    <!-- SENSOR 1 -->
+    <div class="grafica-historial">
+      <div class="grafica">
+        <h2>Gráfica 1 - Historial</h2>
+        <div id="graficaSensor1"></div>
+      </div>
+      <div class="historial" id="historialSensor1"></div>
+    </div>
+
+    <!-- SENSOR 2 -->
+    <div class="grafica-historial">
+      <div class="grafica">
+        <h2>Gráfica 2 - Historial</h2>
+        <div id="graficaSensor2"></div>
+      </div>
+      <div class="historial" id="historialSensor2"></div>
+    </div>
+
+    <!-- SENSOR 3 -->
+    <div class="grafica-historial">
+      <div class="grafica">
+        <h2>Gráfica 3 - Historial</h2>
+        <div id="graficaSensor3"></div>
+      </div>
+      <div class="historial" id="historialSensor3"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Estilo de cada sección (gráfica + historial) */
+.grafica-historial {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo de la gráfica */
+.grafica {
+  flex: 3;
+  background-color: #d3e0d1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grafica h2 {
+  margin-top: 0;
+}
+
+#graficaSensor1,
+#graficaSensor2,
+#graficaSensor3 {
+  height: 400px;
+}
+
+/* Estilo del historial */
+.historial {
+  flex: 1.2;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+/* Estilo de la lista del historial */
+.historial ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.historial li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Título principal */
+.titulo-pagina {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0;
+  color: #3b3b3b;
+  font-weight: 600;
+}
